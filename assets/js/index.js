@@ -38,7 +38,7 @@ function beforePrint(){
     document.getElementById("dateOutput").innerText = formattedDate;
 }
 
-function changeLogo(){
+/*function changeLogo(){
     let logoPage = document.getElementById("logoPage");
     let vague = document.getElementById("vague");
     if(modeAsso === "ADAPEI"){
@@ -55,7 +55,7 @@ function changeLogo(){
         document.getElementById("changeLogoBtn").innerText = "AMSEAA"
         modeAsso = "ADAPEI"; 
     }
-}
+}*/
 
 var mois = new Array( "Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Décembre" );
 

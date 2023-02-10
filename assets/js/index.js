@@ -1,6 +1,6 @@
 window.onbeforeprint = beforePrint;
 
-let modeAsso = "ADAPEI";
+/*let modeAsso = "ADAPEI";*/
 
 document.getElementById("nomInput").addEventListener("change", (e) => {
     document.getElementById("nomOutput").innerText = e.target.value;
@@ -37,25 +37,6 @@ function beforePrint(){
     let formattedDate = date.getDate() + " " + mois[date.getMonth()] + " " + date.getFullYear();
     document.getElementById("dateOutput").innerText = formattedDate;
 }
-
-/*function changeLogo(){
-    let logoPage = document.getElementById("logoPage");
-    let vague = document.getElementById("vague");
-    if(modeAsso === "ADAPEI"){
-        document.getElementById("titrePage").innerText = "Comptes Informatiques AMSEAA";
-        logoPage.src ="assets/img/logo_amseaa.jpg";
-        vague.src ="assets/img/vague_amseaa.jpg";
-        document.getElementById("changeLogoBtn").innerText = "ADAPEI"
-        modeAsso = "AMSEAA";
-    } else {
-        document.getElementById("titrePage").innerText = "Comptes Informatiques AMSEAA";
-        logoPage.src ="assets/img/logo_adapei_meuse.jpg";
-        logoPage.crossOrigin ="anonymous";
-        vague.src ="assets/img/vague_adapei_meuse.jpg";
-        document.getElementById("changeLogoBtn").innerText = "AMSEAA"
-        modeAsso = "ADAPEI"; 
-    }
-}*/
 
 var mois = new Array( "Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Décembre" );
 

@@ -35,7 +35,7 @@ function nomToIdentifiantInput(eNom){
 function beforePrint(){
     let date = new Date();
     let formattedDate = date.getDate() + " " + mois[date.getMonth()] + " " + date.getFullYear();
-    document.getElementById("dateOutput").innerText = formattedDate;
+    document.getElementById('dateOutput').innerHTML = date;
 }
 
 var mois = new Array( "Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Décembre" );

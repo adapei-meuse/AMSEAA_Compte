@@ -52,13 +52,13 @@
                         <strong>Mot de passe :</strong> <span class="passwordOutput">password</span> 
                     </p>
                 </div>
-                <!--<div class="col-5">
+                <div class="col-5">
                     <p>
                         <strong><i class="fa fa-at"></i> Adresse mail :&nbsp;</strong><br>
                         <strong>Identifiant :</strong> <span class="identifiantOutput">jean.riviere</span>@amseaa.fr <br>
                         <strong>Mot de passe :</strong> <span class="passwordOutput">password</span>
                     </p>
-                </div> -->
+                </div>
             </div>
             <div class="row noprint" style="padding-top: 10px;">
                 <div class="col offset-1">
@@ -77,10 +77,17 @@
             <div class="row" style="/*padding-top: 150px;*//*position: absolute*/;bottom: 0;">
                 <div class="col" style="width: 1140px;">
                     <hr>
-                    <p>
-                        Le <span id="dateOutput"></span>
+                    <p>Le <span id="dateOutput">
+                        <SCRIPT LANGUAGE="JavaScript">
+                        var maintenant=new Date();
+                        var jour=maintenant.getDate();
+                        var mois=maintenant.getMonth()+1;
+                        var an=maintenant.getFullYear();
+                        document.write("",jour,"/",mois,"/",an,".");
+                        </SCRIPT>
+                        </span>
                         <br>Service Informatique
-                        <br>2126 - 09 71 00 16 06<br><br>
+                        <br>03 29 75 86 28<br><br>
                     </p>
                 </div>
             </div>

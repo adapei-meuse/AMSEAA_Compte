@@ -78,13 +78,12 @@
                 <div class="col" style="width: 1140px;">
                     <hr>
                     <p>Le <span id="dateOutput">
-                        <SCRIPT LANGUAGE="JavaScript">
-                        var maintenant=new Date();
-                        var jour=maintenant.getDate();
-                        var mois=maintenant.getMonth()+1;
-                        var an=maintenant.getFullYear();
-                        document.write("",jour,"/",mois,"/",an,".");
-                        </SCRIPT>
+                        	<script>
+		                        var dateElement = document.getElementById("date");
+		                        var date = new Date();
+		                        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+		                        dateElement.innerHTML = date.toLocaleDateString('fr-FR', options);
+	                        </script>
                         </span>
                         <br>Service Informatique
                         <br>03 29 75 86 28<br><br>

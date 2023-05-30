@@ -15,7 +15,7 @@ document.getElementById("prenomInput").addEventListener("change", (e) => {
     }
 );
 
-document.getElementById("identifiantInput").addEventListener("change", (e) => 
+document.getElementById("nomInput" + "prenomInput").addEventListener("change", (e) => 
     Array.from(document.getElementsByClassName("identifiantOutput")).forEach((element) => {
         inputToOutput(element, e)
     })

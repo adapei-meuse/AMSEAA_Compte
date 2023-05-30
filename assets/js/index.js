@@ -8,6 +8,12 @@ document.getElementById("nomInput").addEventListener("change", (e) => {
     document.getElementsByTagName("title").item(0).innerText = e.target.value;
     }
 );
+document.getElementById("prenomInput").addEventListener("change", (e) => {
+    document.getElementById("prenomOutput").innerText = e.target.value;
+    nomToIdentifiantInput(e);
+    document.getElementsByTagName("title").item(0).innerText = e.target.value;
+    }
+);
 
 document.getElementById("identifiantInput").addEventListener("change", (e) => 
     Array.from(document.getElementsByClassName("identifiantOutput")).forEach((element) => {

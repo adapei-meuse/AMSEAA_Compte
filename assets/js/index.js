@@ -8,14 +8,8 @@ document.getElementById("nomInput").addEventListener("change", (e) => {
     document.getElementsByTagName("title").item(0).innerText = e.target.value;
     }
 );
-document.getElementById("prenomInput").addEventListener("change", (e) => {
-    document.getElementById("prenomOutput").innerText = e.target.value;
-    nomToIdentifiantInput(e);
-    document.getElementsByTagName("title").item(0).innerText = e.target.value;
-    }
-);
 
-document.getElementById("nomInput" + "prenomInput").addEventListener("change", (e) => 
+document.getElementById("identifiantInput").addEventListener("change", (e) => 
     Array.from(document.getElementsByClassName("identifiantOutput")).forEach((element) => {
         inputToOutput(element, e)
     })
@@ -32,7 +26,7 @@ function inputToOutput(element, e){
 }
 
 function nomToIdentifiantInput(eNom){
-    let stringId = (eNom.target.value.split(" ")[0].charAt(0) + eNom.target.value.split(" ")[1]).toLowerCase();
+    let stringId = (eNom.target.value.split(" ")[0].charAt(0) + "." + eNom.target.value.split(" ")[1]).toLowerCase();
     let identifiantInput = document.getElementById("identifiantInput");
     identifiantInput.value = stringId;
     identifiantInput.dispatchEvent(new Event("change"));
@@ -43,6 +37,11 @@ function beforePrint(){
     let formattedDate = date.getDate() + " " + mois[date.getMonth()] + " " + date.getFullYear();
     document.getElementById("dateOutput").innerText = formattedDate;
 }
+
+function beforePrint(){
+    let date = new Date();
+    let formattedDate = date.getDate() + " " + mois[date.getMonth()] + " " + date.getFullYear();
+    document.getElementById("dateOutput").innerText = formattedDate;
 
 function changeLogo(){
     let logoPage = document.getElementById("logoPage");

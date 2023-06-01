@@ -27,7 +27,7 @@ function inputToOutput(element, e){
 
 function nomToIdentifiantInput(eNom){
     let stringId = (eNom.target.value.split(" ")[0].charAt(0) + eNom.target.value.split(" ")[1]).toLowerCase();
-    let identifiantInput = document.getElementById("mailInput");
+    let identifiantInput = document.getElementById("identifiantInput");
     identifiantInput.value = stringId;
     identifiantInput.dispatchEvent(new Event("change"));
 }
@@ -35,7 +35,7 @@ function nomToIdentifiantInput(eNom){
 /*prenom.nom@amseaa.fr*/
 function nomToIdentifiantInput(eNom){
     let stringId = eNom.target.value.toLowerCase().replace(" ", ".");
-    let identifiantInput = document.getElementById("identifiantInput");
+    let identifiantInput = document.getElementById("mailInput");
     identifiantInput.value = stringId;
     identifiantInput.dispatchEvent(new Event("change"));
 }

@@ -1,6 +1,6 @@
 window.onbeforeprint = beforePrint;
 
-let modeAsso = "ADAPEI";
+let modeAsso = "AMSEAA";
 
 document.getElementById("nomInput").addEventListener("change", (e) => {
     document.getElementById("nomOutput").innerText = e.target.value;
@@ -45,7 +45,7 @@ function changeLogo(){
         document.getElementById("titrePage").innerText = "Comptes Informatiques AMSEAA";
         logoPage.src ="assets/img/logo_amseaa.jpg";
         vague.src ="assets/img/vague_amseaa.jpg";
-        document.getElementById("changeLogoBtn").innerText = "ADAPEI"
+        document.getElementById("changeLogoBtn").innerText = "AMSEAA"
         modeAsso = "AMSEAA";
     } else {
         document.getElementById("titrePage").innerText = "Comptes Informatiques AMSEAA";

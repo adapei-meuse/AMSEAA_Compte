@@ -38,11 +38,6 @@ function beforePrint(){
     document.getElementById("dateOutput").innerText = formattedDate;
 }
 
-function beforePrint(){
-    let date = new Date();
-    let formattedDate = date.getDate() + " " + mois[date.getMonth()] + " " + date.getFullYear();
-    document.getElementById("dateOutput").innerText = formattedDate;
-
 function changeLogo(){
     let logoPage = document.getElementById("logoPage");
     let vague = document.getElementById("vague");

@@ -41,7 +41,7 @@ function beforePrint(){
 function changeLogo(){
     let logoPage = document.getElementById("logoPage");
     let vague = document.getElementById("vague");
-    if(modeAsso === "ADAPEI"){
+    if(modeAsso === "AMSEAA"){
         document.getElementById("titrePage").innerText = "Comptes Informatiques AMSEAA";
         logoPage.src ="assets/img/logo_amseaa.jpg";
         vague.src ="assets/img/vague_amseaa.jpg";
@@ -53,7 +53,7 @@ function changeLogo(){
         logoPage.crossOrigin ="anonymous";
         vague.src ="assets/img/vague_amseaa.jpg";
         document.getElementById("changeLogoBtn").innerText = "AMSEAA"
-        modeAsso = "ADAPEI"; 
+        modeAsso = "AMSEAA"; 
     }
 }
 

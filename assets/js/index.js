@@ -33,12 +33,12 @@ function nomToIdentifiantInput(eNom){
 }
 
 /*prenom.nom@amseaa.fr*/
-function nomToIdentifiantInput(eNom){
+/*function nomToIdentifiantInput(eNom){
     let stringId = eNom.target.value.toLowerCase().replace(" ", ".");
     let identifiantInput = document.getElementById("mailInput");
     identifiantInput.value = stringId;
     identifiantInput.dispatchEvent(new Event("change"));
-}
+}*/
 
 function beforePrint(){
     let date = new Date();

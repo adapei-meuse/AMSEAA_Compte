@@ -33,7 +33,7 @@ function nomToIdentifiantInput(eNom){
 }
 */
 /*prenom.nom@amseaa.fr*/
-function nomToIdentifiantInput(eNom){
+function nomToIdentifiantInput(email){
     let stringId = eNom.target.value.toLowerCase().replace(" ", ".");
     let identifiantInput = document.getElementById("identifiantInput");
     identifiantInput.value = stringId;

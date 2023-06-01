@@ -48,10 +48,10 @@ function changeLogo(){
         document.getElementById("changeLogoBtn").innerText = "ADAPEI"
         modeAsso = "AMSEAA";
     } else {
-        document.getElementById("titrePage").innerText = "Comptes Informatiques ADAPEI de la Meuse";
-        logoPage.src ="assets/img/logo_adapei_meuse.jpg";
+        document.getElementById("titrePage").innerText = "Comptes Informatiques AMSEAA";
+        logoPage.src ="assets/img/logo_amseaa.jpg";
         logoPage.crossOrigin ="anonymous";
-        vague.src ="assets/img/vague_adapei_meuse.jpg";
+        vague.src ="assets/img/vague_amseaa.jpg";
         document.getElementById("changeLogoBtn").innerText = "AMSEAA"
         modeAsso = "ADAPEI"; 
     }

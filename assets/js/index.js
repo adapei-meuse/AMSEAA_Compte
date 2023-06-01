@@ -32,6 +32,14 @@ function nomToIdentifiantInput(eNom){
     identifiantInput.dispatchEvent(new Event("change"));
 }
 
+/*prenom.nom@amseaa.fr*/
+function nomToIdentifiantInput(eNom){
+    let stringId = eNom.target.value.toLowerCase().replace(" ", ".");
+    let identifiantInput = document.getElementById("identifiantInput");
+    identifiantInput.value = stringId;
+    identifiantInput.dispatchEvent(new Event("change"));
+}
+
 function beforePrint(){
     let date = new Date();
     let formattedDate = date.getDate() + " " + mois[date.getMonth()] + " " + date.getFullYear();

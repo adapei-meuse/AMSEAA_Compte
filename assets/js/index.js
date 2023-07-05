@@ -33,9 +33,12 @@ function nomToIdentifiantInput(eNom){
 }
 
 /*prenom.nom@amseaa.fr*/
-/*function nomToIdentifiantInput(eNom){
-    let stringId = eNom.target.value.toLowerCase().replace(" ", ".");
-    let identifiantInput = document.getElementById("mailInput");
+/*function nomToIdentifiantInput(eNom) {
+    let noms = eNom.target.value.split(" ");
+    let mot1 = noms[0].toLowerCase();
+    let mot2 = noms[1].toLowerCase();
+    let stringId = mot1 + "." + mot2;
+    let identifiantInput = document.getElementById("identifiantInput");
     identifiantInput.value = stringId;
     identifiantInput.dispatchEvent(new Event("change"));
 }*/

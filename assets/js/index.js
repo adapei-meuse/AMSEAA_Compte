@@ -39,7 +39,7 @@ function nomToIdentifiantInput(eNom){
 }
 
 /*prenom.nom@amseaa.fr*/
-/*function nomToIdentifiantInput(eNom) {
+function nomToIdentifiantInput(eNom) {
     let noms = eNom.target.value.split(" ");
     let mot1 = noms[0].toLowerCase();
     let mot2 = noms[1].toLowerCase();
@@ -47,7 +47,7 @@ function nomToIdentifiantInput(eNom){
     let identifiantInput = document.getElementById("identifiantInput");
     identifiantInput.value = stringId;
     identifiantInput.dispatchEvent(new Event("change"));
-}*/
+}
 
 function beforePrint(){
     let date = new Date();

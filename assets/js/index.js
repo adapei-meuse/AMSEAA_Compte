@@ -8,16 +8,15 @@ document.getElementById("nomInput").addEventListener("change", (e) => {
     document.getElementsByTagName("title").item(0).innerText = e.target.value;
     }
 );
-/*
-document.getElementById("nomInput").addEventListener("change", (e) => {
-    document.getElementById("nomOutput").innerText = e.target.value;
-    nomToIdentifiantInput(e);
-    document.getElementsByTagName("title").innerText = e.target.value;
-    }
-);
-*/
+
 document.getElementById("identifiantInput").addEventListener("change", (e) => 
     Array.from(document.getElementsByClassName("identifiantOutput")).forEach((element) => {
+        inputToOutput(element, e)
+    })
+);
+
+document.getElementById("identifiantInput").addEventListener("change", (e) => 
+    Array.from(document.getElementsByClassName("identifiant2Output")).forEach((element) => {
         inputToOutput(element, e)
     })
 );

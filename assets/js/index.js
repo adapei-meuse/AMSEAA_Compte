@@ -17,11 +17,11 @@ let modeAsso = "AMSEAA";
 */
 
 
-document.getElementById("passwordInput").addEventListener("change", (e) => 
+/*document.getElementById("passwordInput").addEventListener("change", (e) => 
     Array.from(document.getElementsByClassName("passwordOutput")).forEach((element) => {
         inputToOutput(element, e)
     })
-);
+);*/
 
 /*function inputToOutput(element, e){
     element.innerText = e.target.value

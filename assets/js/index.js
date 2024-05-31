@@ -2,7 +2,7 @@ window.onbeforeprint = beforePrint;
 
 let modeAsso = "AMSEAA";
 
-/*document.getElementById("nomInput").addEventListener("change", (e) => {
+document.getElementById("nomInput").addEventListener("change", (e) => {
     document.getElementById("nomOutput").innerText = e.target.value;
     nomToIdentifiantInput(e);
     document.getElementsByTagName("title").item(0).innerText = e.target.value;
@@ -33,7 +33,7 @@ function nomToIdentifiantInput(eNom){
     identifiantInput.value = stringId;
     identifiantInput.dispatchEvent(new Event("change"));
 }
-*/
+
 /*prenom.nom@amseaa.fr*/
 function nomToIdentifiantInput2(eNom) {
     let noms = eNom.target.value.split(" ");

@@ -34,15 +34,15 @@ function nomToIdentifiantInput(eNom){
 }
 
 /*prenom.nom@amseaa.fr*/
-/*function nomToIdentifiantInput(eNom) {
+function nomToIdentifiantInput2(eNom) {
     let noms = eNom.target.value.split(" ");
     let mot1 = noms[0].toLowerCase();
     let mot2 = noms[1].toLowerCase();
     let stringId = mot1 + "." + mot2;
-    let identifiantInput = document.getElementById("identifiantInput");
-    identifiantInput.value = stringId;
-    identifiantInput.dispatchEvent(new Event("change"));
-}*/
+    let identifiantInput = document.getElementById("identifiantInput2");
+    identifiantInput2.value = stringId;
+    identifiantInput2.dispatchEvent(new Event("change"));
+}
 
 function beforePrint(){
     let date = new Date();

@@ -2,19 +2,19 @@ window.onbeforeprint = beforePrint;
 
 let modeAsso = "AMSEAA";
 
-/*document.getElementById("nomInput").addEventListener("change", (e) => {
+document.getElementById("nomInput").addEventListener("change", (e) => {
     document.getElementById("nomOutput").innerText = e.target.value;
     nomToIdentifiantInput(e);
     document.getElementsByTagName("title").item(0).innerText = e.target.value;
     }
-);*/
+);
 
-/*document.getElementById("identifiantInput").addEventListener("change", (e) => 
+document.getElementById("identifiantInput").addEventListener("change", (e) => 
     Array.from(document.getElementsByClassName("identifiantOutput")).forEach((element) => {
         inputToOutput(element, e)
     })
 );
-*/
+
 
 
 document.getElementById("passwordInput").addEventListener("change", (e) => 
@@ -23,19 +23,19 @@ document.getElementById("passwordInput").addEventListener("change", (e) =>
     })
 );
 
-/*function inputToOutput(element, e){
+function inputToOutput(element, e){
     element.innerText = e.target.value
-}*/
+}
 
-/*function nomToIdentifiantInput(eNom){
+function nomToIdentifiantInput(eNom){
     let stringId = (eNom.target.value.split(" ")[0].charAt(0) + eNom.target.value.split(" ")[1]).toLowerCase();
     let identifiantInput = document.getElementById("identifiantInput");
     identifiantInput.value = stringId;
     identifiantInput.dispatchEvent(new Event("change"));
-}*/
+}
 
 /*prenom.nom@amseaa.fr*/
-/*function nomToIdentifiantInput2(eNom) {
+function nomToIdentifiantInput2(eNom) {
     let noms = eNom.target.value.split(" ");
     let mot1 = noms[0].toLowerCase();
     let mot2 = noms[1].toLowerCase();
@@ -43,7 +43,7 @@ document.getElementById("passwordInput").addEventListener("change", (e) =>
     let identifiantInput2 = document.getElementById("identifiantInput2");
     identifiantInput2.value = stringId;
     identifiantInput2.dispatchEvent(new Event("change"));
-}*/
+}
 
 function beforePrint(){
     let date = new Date();

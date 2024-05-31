@@ -32,12 +32,12 @@ function inputToOutput(element, e){
     element.innerText = e.target.value
 }
 
-function nomToIdentifiantInput(eNom){
+/*function nomToIdentifiantInput(eNom){
     let stringId = (eNom.target.value.split(" ")[0].charAt(0) + eNom.target.value.split(" ")[1]).toLowerCase();
     let identifiantInput = document.getElementById("identifiantInput");
     identifiantInput.value = stringId;
     identifiantInput.dispatchEvent(new Event("change"));
-}
+}*/
 
 /*prenom.nom@amseaa.fr*/
 function nomToIdentifiantInput2(eNom) {

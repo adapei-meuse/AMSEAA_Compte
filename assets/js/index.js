@@ -2,24 +2,24 @@ window.onbeforeprint = beforePrint;
 
 let modeAsso = "AMSEAA";
 
-/*document.getElementById("nomInput").addEventListener("change", (e) => {
+document.getElementById("nomInput").addEventListener("change", (e) => {
     document.getElementById("nomOutput").innerText = e.target.value;
     nomToIdentifiantInput(e);
     document.getElementsByTagName("title").item(0).innerText = e.target.value;
     }
 );
-*/
+
 document.getElementById("nomInput").addEventListener("change", (e) => {
     document.getElementById("nomOutput").innerText = e.target.value;
     nomToIdentifiantInput(e);
     document.getElementsByTagName("title").innerText = e.target.value;
     }
 );
-document.getElementById("identifiantInput").addEventListener("change", (e) => 
+/*document.getElementById("identifiantInput").addEventListener("change", (e) => 
     Array.from(document.getElementsByClassName("identifiantOutput")).forEach((element) => {
         inputToOutput(element, e)
     })
-);
+);*/
 
 document.getElementById("passwordInput").addEventListener("change", (e) => 
     Array.from(document.getElementsByClassName("passwordOutput")).forEach((element) => {

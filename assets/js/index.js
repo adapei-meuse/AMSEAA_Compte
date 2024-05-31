@@ -46,8 +46,8 @@ function nomToIdentifiantInput2(eNom) {
     let mot2 = noms[1].toLowerCase();
     let stringId = mot1 + "." + mot2;
     let identifiantInput2 = document.getElementById("identifiantInput2");
-    identifiantInput2.value = stringId;
-    identifiantInput2.dispatchEvent(new Event("change"));
+    identifiantInput.value = stringId;
+    identifiantInput.dispatchEvent(new Event("change"));
 }
 
 function beforePrint(){

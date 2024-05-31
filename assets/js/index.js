@@ -47,7 +47,7 @@ function nomToIdentifiantInput2(eNom) {
     let stringId = mot1 + "." + mot2;
     let identifiantInput2 = document.getElementById("identifiantInput2");
     identifiantInput2.value = stringId;
-    identifiantInput.dispatchEvent(new Event("change"));
+    identifiantInput2.dispatchEvent(new Event("change"));
 }
 
 function beforePrint(){

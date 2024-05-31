@@ -15,11 +15,7 @@ document.getElementById("identifiantInput").addEventListener("change", (e) =>
     })
 );
 
-document.getElementById("identifiantInput2").addEventListener("change", (e) => 
-    Array.from(document.getElementsByClassName("identifiantOutput2")).forEach((element) => {
-        inputToOutput2(element, e)
-    })
-);
+
 
 
 document.getElementById("passwordInput").addEventListener("change", (e) => 
